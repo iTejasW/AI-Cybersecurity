@@ -48,7 +48,7 @@ SSH brute force attacks are one of the most common attack vectors against Linux 
 ```bash
 # Clone the repo
 git clone https://github.com/iTejasW/AI-Cybersecurity.git
-cd ai-security-portfolio/01-ssh-log-parser
+cd AI-Cybersecurity/01-ssh-log-parser
 
 
 # Run the parser
