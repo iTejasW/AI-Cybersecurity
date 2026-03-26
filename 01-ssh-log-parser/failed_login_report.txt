@@ -1,0 +1,57 @@
+=== Suspicious Failed Login Report ===
+Generated  : Mar 26 2026 08:02:17
+Log file   : auth.log
+Lines read : 69
+Suspicious IPs found : 7
+============================================================
+
+[HIGH] Suspicious IP : 192.168.1.105
+  Failed attempts : 14
+  Usernames tried : admin, deploy, guest, oracle, pi, root, test, ubuntu, user
+  First seen      : Dec 10 06:25:43
+  Last seen       : Dec 10 06:27:43
+------------------------------------------------------------
+
+[MEDIUM] Suspicious IP : 203.0.113.42
+  Failed attempts : 6
+  Usernames tried : admin, root, test
+  First seen      : Dec 10 06:25:49
+  Last seen       : Dec 10 06:26:19
+------------------------------------------------------------
+
+[MEDIUM] Suspicious IP : 10.0.0.55
+  Failed attempts : 6
+  Usernames tried : admin, deploy, root, test, ubuntu
+  First seen      : Dec 10 06:26:12
+  Last seen       : Dec 10 06:26:29
+------------------------------------------------------------
+
+[MEDIUM] Suspicious IP : 198.51.100.7
+  Failed attempts : 6
+  Usernames tried : john
+  First seen      : Dec 10 06:26:14
+  Last seen       : Dec 10 06:27:35
+------------------------------------------------------------
+
+[MEDIUM] Suspicious IP : 172.16.0.200
+  Failed attempts : 7
+  Usernames tried : admin, guest, oracle, pi, root, test
+  First seen      : Dec 10 06:26:33
+  Last seen       : Dec 10 06:26:45
+------------------------------------------------------------
+
+[HIGH] Suspicious IP : 45.33.32.156
+  Failed attempts : 18
+  Usernames tried : admin, ansible, deploy, docker, ftp, git, hadoop, jenkins, kubernetes, mysql, postgres, root, test, ubuntu, vagrant
+  First seen      : Dec 10 06:26:49
+  Last seen       : Dec 10 06:27:23
+------------------------------------------------------------
+
+[MEDIUM] Suspicious IP : 8.8.8.8
+  Failed attempts : 5
+  Usernames tried : admin, root, test
+  First seen      : Dec 10 06:27:49
+  Last seen       : Dec 10 06:27:57
+------------------------------------------------------------
+
+Total suspicious IPs : 7
