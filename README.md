@@ -17,8 +17,8 @@ A collection of AI-powered cybersecurity tools built as part of my journey to be
 | # | Project | Description | Skills Used | Status |
 |---|---------|-------------|-------------|--------|
 | 01 | [SSH Log Parser](./01-ssh-log-parser/) | Detects SSH brute force attempts from auth logs | Python, Regex, File I/O | ✅ Complete |
-| 02 | [CVE Threat Brief Generator](./02-cve-threat-brief/) | AI-powered CVE analysis and threat briefing tool | Python, REST APIs, LLMs | 🔄 In Progress |
-| 03 | Coming Soon | AI-assisted threat hunting tool | Python, SIEM, AI | 📅 Planned |
+| 02 | [CVE Threat Brief Generator](./02-cve-threat-brief/) | AI-powered CVE analysis and threat briefing tool | Python, REST APIs, LLMs | ✅ Complete |
+| 03 | Coming Soon | AI-assisted threat hunting tool | Python, SIEM, AI | 🔄 In Progress |
 
 ---
 
