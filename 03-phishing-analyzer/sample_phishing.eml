@@ -1,0 +1,23 @@
+From: security@paypa1.com
+To: victim@company.com
+Reply-To: harvester@suspicious.ru
+Subject: Urgent: Your PayPal account has been limited
+Date: Mon, 10 Dec 2024 06:25:43 +0000
+Content-Type: text/plain
+
+Dear Customer,
+
+We have noticed unusual activity on your PayPal account. Your account 
+has been limited until we hear from you.
+
+Please verify your account immediately to avoid suspension:
+http://paypa1.com/verify/login?token=abc123
+http://tinyurl.com/fake-paypal-login
+
+If you do not verify within 24 hours your account will be permanently 
+suspended.
+
+Click here to verify: http://suspicious-domain.ru/paypal/login
+
+PayPal Security Team
+security@paypal.com
