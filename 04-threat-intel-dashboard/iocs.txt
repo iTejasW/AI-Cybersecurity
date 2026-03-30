@@ -1,0 +1,12 @@
+# Sample IOCs for testing
+# Lines starting with # are ignored
+# Supported types: IPv4 addresses, domains, MD5/SHA1/SHA256 hashes
+
+# Suspicious IPs
+45.33.32.156
+
+# Suspicious domains
+suspicious-domain.ru
+
+# Known malware hash (EICAR test file - MD5)
+44d88612fea8a8f36de82e1278abb02f
