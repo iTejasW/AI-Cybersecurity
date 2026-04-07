@@ -1,9 +1,3 @@
-Here is a comprehensive, professional `README.md` designed specifically for your GitHub repository. It breaks down the architecture, the cybersecurity principles behind the code, and how to deploy it. 
-
-You can copy and paste this directly into your repository.
-
-***
-
 ```markdown
 # 🛡️ Autonomous AI Threat Hunter (Stateful XDR Orchestrator)
 
