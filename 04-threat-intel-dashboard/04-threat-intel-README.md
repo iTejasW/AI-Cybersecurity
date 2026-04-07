@@ -107,6 +107,7 @@ RECOMMENDED ACTIONS:
 The tool generates a structured JSON report for every run, designed for easy ingestion into SIEM or SOAR platforms.
 
 <details>
+   
   <summary>Click to expand Sample JSON Output</summary>
 
   ```json
