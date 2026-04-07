@@ -102,57 +102,40 @@ RECOMMENDED ACTIONS:
    frames, which may indicate an ongoing "Rapid Reset" attack attempt.
 ========================================================
 ```
-## 💾 Sample SIEM Export (.json)
-
-The tool generates a structured JSON report for every run, designed for easy ingestion into SIEM or SOAR platforms.
-
 <details>
-  <summary>Click to expand Sample JSON Output</summary>
+<summary>📊 Click to expand JSON output</summary>
 
-  ```json
-  [
-      {
-          "ioc": "45.33.32.156",
-          "type": "ip",
-          "intel": {
-              "abuseipdb": { 
-                  "abuseConfidenceScore": 100, 
-                  "totalReports": 254 
-              },
-              "virustotal": { 
-                  "malicious": 12, 
-                  "total": 72 
-              },
-              "otx": { 
-                  "pulse_count": 3, 
-                  "threat_names": ["Mirai-Variant", "Brute-Force-List"] 
-              },
-              "shodan": { 
-                  "open_ports": [23, 80, 8080] 
-              }
-          },
-          "verdict": "VERDICT: MALICIOUS\nRISK LEVEL: HIGH\nANALYSIS: This IP is part of a Mirai botnet...\nRECOMMENDED ACTIONS: 1. Block on Firewall..."
-      },
-      {
-          "ioc": "CVE-2023-44487",
-          "type": "cve",
-          "intel": {
-              "epss": { 
-                  "epss": "94.12%", 
-                  "percentile": "0.987" 
-              },
-              "otx": { 
-                  "pulse_count": 12, 
-                  "threat_names": ["HTTP/2 Rapid Reset Campaign"] 
-              }
-          },
-          "verdict": "VERDICT: MALICIOUS\nRISK LEVEL: CRITICAL\nANALYSIS: High exploitability vulnerability...\nRECOMMENDED ACTIONS: 1. Patch load balancers..."
-      }
-  ]
+```json
+[
+    {
+        "ioc": "45.33.32.156",
+        "type": "ip",
+        "intel": {
+            "abuseipdb": {
+                "abuseConfidenceScore": 100,
+                "totalReports": 254
+            },
+            "virustotal": {
+                "malicious": 12,
+                "total": 72
+            },
+            "otx": {
+                "pulse_count": 3,
+                "threat_names": ["Mirai-Variant", "Brute-Force-List"]
+            },
+            "shodan": {
+                "open_ports": [23, 80, 8080]
+            }
+        },
+        "verdict": "VERDICT: MALICIOUS\nRISK LEVEL: HIGH"
+    }
+]
+```
+
 </details>
 
 ---
-'''
+
 ## 📁 Files
 
 | File | Description |
