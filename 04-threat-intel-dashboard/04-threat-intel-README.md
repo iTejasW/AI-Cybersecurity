@@ -107,10 +107,9 @@ RECOMMENDED ACTIONS:
 The tool generates a structured JSON report for every run, designed for easy ingestion into SIEM or SOAR platforms.
 
 <details>
-   
   <summary>Click to expand Sample JSON Output</summary>
 
-  ``` json
+  ```json
   [
       {
           "ioc": "45.33.32.156",
@@ -150,10 +149,9 @@ The tool generates a structured JSON report for every run, designed for easy ing
           "verdict": "VERDICT: MALICIOUS\nRISK LEVEL: CRITICAL\nANALYSIS: High exploitability vulnerability...\nRECOMMENDED ACTIONS: 1. Patch load balancers..."
       }
   ]
-
 </details>
 
-
+'''
 ---
 ## 📁 Files
 
