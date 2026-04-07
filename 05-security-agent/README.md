@@ -3,6 +3,7 @@
 This project implements a **ReAct-based AI Security Agent** capable of reasoning over security investigations and orchestrating multiple security tools automatically.
 
 The agent understands natural language, decides which tools to invoke (CVE analysis, phishing analysis, threat intelligence), chains tool outputs, and produces analyst-ready summaries.
+
 Risk-Based Prioritization: The agent is programmed to treat CVEs with an EPSS score > 10% as critical, regardless of base CVSS, reflecting real-world exploitability.
 
 ---
