@@ -69,10 +69,9 @@ def check_abuseipdb(ip: str) -> dict:
     params  = {"ipAddress": ip, "maxAgeInDays": 90}
 
     try:
-        response = safe_request(url, headers=headers, params=params, timeout=10)
-        data     = response.json()
+        data = safe_request(url, headers=headers, params=params, timeout=10)
 
-        if response.status_code != 200:
+        if data.status_code != 200:
             return {"error": data.get("message", "Unknown error")}
 
         result = data["data"]
@@ -104,10 +103,9 @@ def check_virustotal(ioc: str, ioc_type: str) -> dict:
         return {"error": "Unsupported IOC type for VirusTotal"}
 
     try:
-        response = safe_request(endpoints[ioc_type], headers=headers, timeout=10)
-        data     = response.json()
+        data = safe_request(endpoints[ioc_type], headers=headers, timeout=10)
 
-        if response.status_code != 200:
+        if data.status_code != 200:
             return {"error": data.get("error", {}).get("message", "Unknown error")}
 
         stats = data["data"]["attributes"]["last_analysis_stats"]
@@ -130,12 +128,11 @@ def check_shodan(ip: str) -> dict:
     API_KEY = os.getenv("SHODAN_API_KEY")
 
     try:
-        response = safe_request(
+        data = safe_request(
             f"https://api.shodan.io/shodan/host/{ip}",
             params={"key": API_KEY},
             timeout=10
         )
-        data = response.json()
 
         if "error" in data:
             return {"error": data["error"]}
@@ -193,7 +190,7 @@ def get_epss_score(cve_id: str) -> dict:
     try:
         response = safe_request(url, timeout=10)
         if response.status_code == 200:
-            data = response.json().get("data", [])
+            data = response.get("data", [])
             if data:
                 # EPSS is returned as a decimal (0.01 = 1%)
                 # We convert it to a percentage for easier AI reasoning
