@@ -110,7 +110,7 @@ The tool generates a structured JSON report for every run, designed for easy ing
    
   <summary>Click to expand Sample JSON Output</summary>
 
-  ```json
+  ``` json
   [
       {
           "ioc": "45.33.32.156",
