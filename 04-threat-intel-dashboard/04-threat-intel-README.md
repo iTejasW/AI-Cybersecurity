@@ -151,8 +151,8 @@ The tool generates a structured JSON report for every run, designed for easy ing
   ]
 </details>
 
-'''
 ---
+'''
 ## 📁 Files
 
 | File | Description |
