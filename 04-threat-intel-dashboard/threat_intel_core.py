@@ -11,12 +11,10 @@ client = Anthropic()
 
 
 #Instead of calling requests.get() directly in every function, we will create a "Wrapper" function that handles the retries automatically.
-def safe_request(url, headers, params=None, retries=3, backoff_factor=2):
-    """Makes an API request with exponential backoff for rate limits."""
+def safe_request(url, headers=None, params=None, retries=3, backoff_factor=2, timeout=10):
+     """Makes an API request with exponential backoff for rate limits."""
     for i in range(retries):
-        try:
-            response = requests.get(url, headers=headers, params=params, timeout=10)
-            
+        response = requests.get(url, headers=headers, params=params, timeout=timeout)
             if response.status_code == 200:
                 return response.json()
             
