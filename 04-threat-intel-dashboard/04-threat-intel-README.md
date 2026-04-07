@@ -149,10 +149,11 @@ RECOMMENDED ACTIONS:
           "verdict": "VERDICT: MALICIOUS\nRISK LEVEL: CRITICAL\nANALYSIS: High exploitability vulnerability...\nRECOMMENDED ACTIONS: 1. Patch load balancers..."
       }
   ]
+
 </details>
 
 
-
+---
 ## 📁 Files
 
 | File | Description |
