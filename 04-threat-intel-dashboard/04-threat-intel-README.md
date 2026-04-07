@@ -104,7 +104,7 @@ RECOMMENDED ACTIONS:
 ```
 ## 💾 Sample SIEM Export (.json)
 
-[cite_start]The tool generates a structured JSON report for every run, designed for easy ingestion into SIEM or SOAR platforms. [cite: 1]
+The tool generates a structured JSON report for every run, designed for easy ingestion into SIEM or SOAR platforms.
 
 <details>
   <summary>Click to expand Sample JSON Output</summary>
@@ -149,7 +149,6 @@ RECOMMENDED ACTIONS:
           "verdict": "VERDICT: MALICIOUS\nRISK LEVEL: CRITICAL\nANALYSIS: High exploitability vulnerability...\nRECOMMENDED ACTIONS: 1. Patch load balancers..."
       }
   ]
-
 </details>
 
 
